@@ -30,7 +30,7 @@ sudo apt update -y && apt full-upgrade -y
 2. Clone the Cyberonix repository from GitHub:
 
 ```shell script
-git clone https://github.com/TeamDefronix/Cyberonix.git
+git clone https://github.com/ypraveennaidu/CyberHub-Integrated-Cybersecurity-Resource-Platform.git
 ```
 
 3. Navigate to the Cyberonix directory:
@@ -54,13 +54,13 @@ sudo python3 setup.py
 6. Execute Cyberonix:
 
 ```shell script
-cyberHub
+cyberhub
 ```
 
 ## PIP intallation
 
 ```shell script
-pip install cyberHub
+pip install cyberhub
 ```
 
 If you encounter the "Externally-Managed-Environment" issue on your machine, please refer to our blog for a solution. You can find detailed information and steps to resolve this problem by clicking <a href="https://technicalnavigator.in/how-to-fix-error-externally-managed-environment-in-python-kali-linux/" target="_blank">here</a>.
@@ -455,3 +455,4 @@ Worlist Generation:
   
 
 "# CyberHub-Integrated-Cybersecurity-Resource-Platform" 
+
