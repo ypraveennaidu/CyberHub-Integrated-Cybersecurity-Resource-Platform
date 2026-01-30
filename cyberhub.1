@@ -1,0 +1,189 @@
+.TH CYBERHUB 1 "CyberHub User Manual"
+
+.SH NAME
+.B CyberHub -
+.I A Complete Resource Hub For Cyber Security Community
+
+.SH SYNOPSIS
+.RI cyberhub
+.RI [ options ]
+.RI [ arguments ]
+
+.SH INTRODUCTION
+.B CyberHub
+is an open source and free cybersecurity utility . It is designed as a comprehensive resource hub for the cybersecurity community.
+
+CyberHub aims to be a one-stop solution for learners, practitioners, and security enthusiasts by providing easy access to tools, cheatsheets, and useful security-related utilities. The project is actively maintained and continuously updated with new and improved features.
+
+Users are welcome to suggest new features or improvements for future releases.
+
+.SH OPTIONS
+
+.TP
+.B --tools, -t
+Directly access the Tools option.
+
+.TP
+.B --cheatsheet, -c
+Directly access the Cheatsheet option.
+
+.TP
+.B --asnrecord, -asn
+Retrieve ASN record information based on an IP address.
+
+Example:
+
+```
+cyberhub --asnrecord -ip 8.8.8.8
+```
+
+.TP
+.B --dnsrecord, -dns
+Retrieve DNS record information for a domain, with an optional record type.
+
+Example:
+
+```
+cyberhub --dnsrecord -domain example.com --record TXT
+```
+
+.TP
+.B --default-password-gen, -pass
+Generate a secure random password with customizable length and character sets.
+
+Example:
+
+```
+cyberhub --default-password-gen -L 10
+```
+
+.TP
+.B --http-status, -S
+Fetch the HTTP status code of a domain.
+
+Example:
+
+```
+cyberhub --http-status -D google.com
+```
+
+.TP
+.B --screenshot, -s
+Capture a screenshot of a website and save it to the /Screenshot directory.
+
+Example:
+
+```
+cyberhub --screenshot -domain example.com
+```
+
+.TP
+.B --remove-duplicate, -rd
+Remove duplicate entries from a file.
+
+Example:
+
+```
+cyberhub --remove-duplicate -f file.txt
+```
+
+.TP
+.B --getip, -gip
+Retrieve the IP address of a domain.
+
+Example:
+
+```
+cyberhub --getip -D google.com
+```
+
+.SH ARGUMENTS
+
+.TP
+.B --domain, -D
+Specify the domain name for relevant operations.
+
+Example:
+
+```
+cyberhub --domain google.com
+```
+
+.TP
+.B --ip, -ip
+Specify the IP address for relevant operations.
+
+Example:
+
+```
+cyberhub --ip 8.8.8.8
+```
+
+.TP
+.B --record, -r
+Specify the DNS record type.
+
+Example:
+
+```
+cyberhub --record TXT
+```
+
+.TP
+.B --upper, -u
+Include uppercase letters in password generation.
+
+.TP
+.B --lower, -l
+Include lowercase letters in password generation.
+
+.TP
+.B --digits, -d
+Include digits in password generation.
+
+.TP
+.B --punctuation, -p
+Include special characters in password generation.
+
+.TP
+.B --length, -L
+Specify the length of the generated password.
+
+Example:
+
+```
+cyberhub --length 12
+```
+
+.TP
+.B --checkpassword, -C
+Check the generated password against common password patterns.
+
+.TP
+.B --file, -f
+Specify an input file for file-based operations.
+
+Example:
+
+```
+cyberhub --file /path/to/file
+```
+
+.TP
+.B --output, -o
+Specify the output file path.
+
+Example:
+
+```
+cyberhub --output /path/to/output
+```
+
+.SH FILES
+
+.RI /usr/bin/cyberhub
+: Path to the CyberHub executable file.
+
+.SH ERROR HANDLING
+.B CyberHub
+handles invalid inputs gracefully by displaying clear and informative error messages. Users should refer to these messages for troubleshooting.
